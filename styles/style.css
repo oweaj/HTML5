@@ -33,28 +33,32 @@ body {
 
 /* 메인 */
 .main {
-  display: flow-root;
+  display: flex;
+  flex-direction: row;
+
   height: 50vh;
-  padding: 0 15px;
   background-color: lightgreen;
 }
 
-.group {
+/* .group {
   margin: 0 15px;
   float: left;
-}
+} */
 
 .group1 {
   width: 250px;
-  background-color: teal
+  background-color: teal;
+  order: 1;
 }
+
 .group2 {
   width: 380px;
-  background-color:sandybrown;
+  background-color: sandybrown;
 }
+
 .group3 {
   width: 190px;
-  background-color: mediumpurple
+  background-color: mediumpurple;
 }
 
 /* 슬로건 */
