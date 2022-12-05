@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 /* 기본 스타일 */
 *, *::before, *::after {
@@ -22,8 +23,28 @@ body {
 .header {
   height: 15vh;
   padding: 0 30px;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+.member {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
   background-color: pink;
 }
+
+/* .member li ::before {
+  content: ":";
+} */
+
+/* .first ::before {
+  content: "" !important;
+} */
+
+/* li:first-child ::before {
+  content: "";
+} */
 
 /* 비주얼 */
 .visual {
