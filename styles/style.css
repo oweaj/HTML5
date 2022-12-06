@@ -46,8 +46,8 @@ body {
 /* 텍스트 링크 모음 */
 .member {
   text-align: right;
-  /* background-color: aqua; */
   padding: 4px 0;
+  background-color: aqua;
 }
 
 .member li {
@@ -58,18 +58,18 @@ body {
 .member a{
   display: inherit;
   padding: 6px 10px;
+  text-transform: uppercase;
   background-color: coral;
+}
+
+/* 마지막 li 요소에 포함된 a요소 오른쪽 패딩값 0 해주기 */
+.member li:last-child a {
+  padding-right: 0;
 }
 
 .divider {
   margin-right: 4px;
 }
-
-
-
-
-
-
 
 /* 비주얼 */
 .visual {
