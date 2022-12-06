@@ -93,7 +93,7 @@ body {
 }
 
 .menu {
-  display: flow-root;
+  height: 47px;
   padding-left: 230px;
   border-top: 2px solid currentColor;
   border-radius: 0 0 5px 5px;
@@ -102,7 +102,18 @@ body {
 
 .menu-item {
   float: left;
-  background-color: aqua;
+  border-left: 2px solid #fff;
+}
+
+.menu-button {
+  border: 0;
+  padding: 0 23px;
+  line-height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 0 #212121, 2px 2px 0 #212121;
+  background: transparent;
 }
 
 .sub-menu {
