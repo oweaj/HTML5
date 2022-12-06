@@ -6,16 +6,21 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 /* 링크 스타일 */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-
 /* 본문 스타일 */
 body {
+  /* em, rem 단위 사용하기 */
   color: #212121;
+  font-size: 1.4rem;
   background-color: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -29,7 +34,6 @@ body {
 /* 헤더 */
 .header {
   position: relative;
-  height: 15vh;
   padding: 0 30px;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
@@ -45,26 +49,23 @@ body {
 
 /* 텍스트 링크 모음 */
 .member {
+  /* position 속성으로 .member 영역을 왼쪽 10px을 줌 */
+  /* position: relative;
+  left: 10px; */
   text-align: right;
   padding: 4px 0;
-  background-color: aqua;
+  /* transform 속성으로 .member 영역에 X축 10px을 줌  */
+  transform: translateX(10px);
 }
 
 .member li {
   display: inline-block;
-  /* background-color: palevioletred; */
 }
 
 .member a{
   display: inherit;
   padding: 6px 10px;
   text-transform: uppercase;
-  background-color: coral;
-}
-
-/* 마지막 li 요소에 포함된 a요소 오른쪽 패딩값 0 해주기 */
-.member li:last-child a {
-  padding-right: 0;
 }
 
 .divider {
