@@ -30,7 +30,6 @@ a {
 
 /* 본문 스타일 */
 body {
-  /* em, rem 단위 사용하기 */
   color: #212121;
   font-size: 1.4rem;
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
@@ -66,12 +65,8 @@ body {
 
 /* 텍스트 링크 모음 */
 .member {
-  /* position 속성으로 .member 영역을 왼쪽 10px을 줌 */
-  /* position: relative;
-  left: 10px; */
   text-align: right;
   padding: 4px 0;
-  /* transform 속성으로 .member 영역에 X축 10px을 줌  */
   transform: translateX(10px);
 }
 
@@ -91,7 +86,7 @@ body {
 
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .menu {
@@ -137,7 +132,7 @@ body {
   display: none;
   position: absolute;
   top: 47px;
-  background-color: pink;
+  padding: 4px 0;
 }
 
 .menu-html,
@@ -162,6 +157,11 @@ body {
   padding-left: 1em;
 }
 
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 0;
+}
+
 .sub-menu a::before {
   content: "\e804";
   font-family: "fontello";
@@ -182,6 +182,11 @@ body {
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
   content: "\e800";
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+  color: green;
 }
 
 /* 비주얼 */
