@@ -3,7 +3,8 @@
 @import url(./reset.css);
 
 /* 숨긴 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -99,7 +100,7 @@ body {
   padding-left: 230px;
   border-top: 2px solid currentColor;
   border-radius: 0 0 5px 5px;
-  background: tomato linear-gradient(green, orangered, green, orangered, green);
+  background: green radial-gradient(circle at right top, green, orangered, green, orangered);
 }
 
 .menu > li:nth-child(-n + 3) {
@@ -250,9 +251,10 @@ body {
 /* 메인 */
 .main {
   display: flow-root;
-  height: 50vh;
-  padding: 0 15px;
-  background-color: lightgreen;
+  min-height: 450px;
+  padding: 30px 15px;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
 }
 
 .group {
@@ -262,7 +264,6 @@ body {
 
 .group1 {
   width: 250px;
-  background-color: teal;
 }
 .group2 {
   width: 380px;
@@ -271,6 +272,96 @@ body {
 .group3 {
   width: 190px;
   background-color: mediumpurple;
+}
+
+.login {
+  padding: 10px;
+  border-radius: 5px;
+  background: green radial-gradient(circle at right top, green, orangered, green, orangered);
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.login-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+  color: #fff;
+}
+
+.login-form {
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+}
+
+.login fieldset {
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid green;
+}
+
+.user-email,
+.user-pw {
+  margin-bottom: 5px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 50px;
+}
+
+.login-form input {
+  width: 95px;
+  height: 24px;
+  border: 1px solid green;
+  border-radius: 2px;
+}
+
+.login-button {
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  background: green radial-gradient(circle at right top, orangered, green);
+}
+
+.sign {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 5px 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+.sign a {
+  display: block;
+  padding: 5px 0;
+  letter-spacing: -1px;
+}
+
+.sign a::before {
+  content: "\e803";
+  font-family: "fontello";
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: green;
 }
 
 /* 슬로건 */
