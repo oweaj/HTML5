@@ -200,11 +200,13 @@ body {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.2);
     transform: translate(0, 0);
+    color: green;
   }
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
     transform: translate(400px, 75px);
+    color: green;
   }
 }
 
@@ -333,7 +335,7 @@ body {
 
 .sign {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: nowrap;
   padding: 5px 10px;
   border-radius: 0 0 5px 5px;
@@ -343,25 +345,18 @@ body {
 .sign a {
   display: block;
   padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
   letter-spacing: -1px;
 }
 
 .sign a::before {
   content: "\e803";
-  font-family: "fontello";
-  font-weight: normal;
   display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: 0.2em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 12px;
+  margin: 0 2px;
   color: green;
+  font-family: "fontello";
 }
 
 /* 슬로건 */
