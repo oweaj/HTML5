@@ -100,7 +100,7 @@ body {
   padding-left: 230px;
   border-top: 2px solid currentColor;
   border-radius: 0 0 5px 5px;
-  background: green radial-gradient(circle at right top, green, orangered, green, orangered);
+  background: green radial-gradient(circle at right top, green, orangered, green, orangered, green);
 }
 
 .menu > li:nth-child(-n + 3) {
@@ -357,6 +357,28 @@ body {
   margin: 0 2px;
   color: green;
   font-family: "fontello";
+}
+
+/* 유효성 검사 배너 */
+.validation-list {
+  margin-top: 25px;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  padding: 10px 45px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%, linear-gradient(to bottom, #ccc, #eee);
+}
+
+.validation-list a:hover,
+.validation-list a:focus {
+  color: green;
 }
 
 /* 슬로건 */
