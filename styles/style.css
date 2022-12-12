@@ -457,7 +457,7 @@ body {
 
 .form-group-label {
   margin-right: 10px;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .form-group-input {
@@ -473,7 +473,7 @@ body {
   height: 25px;
   padding: 0 10px;
   font-size: 14px;
-  white-space: nowrap;
+  flex-shrink: 0;
   border-radius: 5px;
   background-color: #212121;
   color: #fff;
