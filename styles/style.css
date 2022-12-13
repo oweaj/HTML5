@@ -597,6 +597,10 @@ body {
   text-align: center;
 }
 
+.news-item-thumbnail img {
+  box-shadow: 0 15px 10px 5px #eee;
+}
+
 .news-item-thumbnail figcaption {
   margin-top: 20px;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/jquery.min.js"></script>
     <script defer src="./js/menu-tab.js"></script>
   </head>
   <body>
@@ -199,10 +200,10 @@
           </fieldset>
         </form>
         <div class="board">
-          <ul class="tab-list" role="tablist">
-            <li role="none"><button type="button" class="tab is-select" role="tab" aria-selected="true" aria-controls="notice" id="noticeButton">공지사항</button></li>
-            <li role="none"><button type="button" class="tab" role="tab" aria-selected="false" aria-controls="archive" id="archiveButton">자료실</button></li>
-          </ul>
+          <div class="tab-list" role="tablist">
+            <button type="button" class="tab is-select" role="tab" aria-selected="true" aria-controls="notice" id="noticeButton">공지사항</button>
+            <button type="button" class="tab" role="tab" aria-selected="false" aria-controls="archive" id="archiveButton">자료실</button>
+          </div>
           <div class="notice tab-panel is-select" role="tabpanel" id="notice" aria-labelledby="noticeButton">
             <ul class="board-list">
               <li>
