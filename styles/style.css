@@ -563,8 +563,8 @@ body {
 }
 
 .news-title {
+  font-size: 15px;
   font-weight: 700;
-  color: green;
 }
 
 .news-link {
@@ -610,6 +610,95 @@ body {
   top: -8px;
   right: -8px;
   padding: 8px;
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.event {
+  position: relative;
+}
+
+.event-button-wrapper {
+  position: absolute;
+  height: 18px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.event-button {
+  width: 19px;
+  height: 100%;
+  border: 0;
+  padding: 18px 0 0;
+  background: url(/styles/images/back_forward.png) no-repeat;
+}
+
+.event-button:focus {
+  outline-offset: -1px;
+}
+
+.event-button-next {
+  background-position: -36px 0;
+}
+
+.event {
+  border-bottom: 1px solid #aaa;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.event-brief {
+  line-height: 1.5;
+}
+
+.related {
+  margin-top: 10px;
+}
+
+.related-list {
+  height: 27px;
+  margin-top: 10px;
+  line-height: 1.5;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: height 0.5s, padding 0.3s 0.3s;
+}
+
+.related-list a {
+  display: block;
+  padding: 2px 20px;
+}
+
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px 0;
+}
+
+.text-xl {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: green;
 }
 
 /* 슬로건 */
