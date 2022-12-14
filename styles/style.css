@@ -740,16 +740,16 @@ body {
 .up,
 .stop,
 .down {
-  /* i의 글자크기가 커지면 float방식의 배경이미지가 수직중앙안됨 그래서 효율적이지 못함 */
-  /* float: right; flex 방식을 제외한 처음 생각한 float방식 
+  /* float: right; flex 방식을 제외하고 생각한 float방식 
   margin-top: 3px; float 배치하면 배경이미지 수직 중앙 맞추려고 마진탑 */
+  /* 하지만 li의 글자크기가 커지면 float방식의 배경이미지가 수직중앙안됨 그래서 효율적이지 못함 */
   /* 포지션으로 배경이미지 배치 */
   position: absolute;
   width: 10px;
   height: 12px;
   top: 50%;
   right: 0;
-  margin-top: -6px; /* 배경 이미지 top 50%하면 시작이 기준이라 이미지 길이의 절반을 다시 올려줌 */
+  margin-top: -6px; /* 배경 이미지 top 50%하면 이미지 시작점 위쪽 기준이라 이미지 길이의 절반을 다시 올려줌 */
   overflow: hidden;
   background: url(./images/rank.png) no-repeat;
 }
