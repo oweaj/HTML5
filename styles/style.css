@@ -701,6 +701,74 @@ body {
   color: green;
 }
 
+/* 인기 사이트 */
+.margin-top-default {
+  margin-top: 20px;
+}
+
+.margin-top-normal {
+  margin-top: 10px;
+}
+
+.favorite {
+  position: relative;
+}
+
+.favorite-list {
+  list-style-type: none;
+}
+
+.favorite-list li {
+  position: relative;
+  margin-top: 10px;
+  counter-increment: num;
+}
+
+.favorite-list li::before {
+  content: counter(num);
+  display: inline-block;
+  width: 15px;
+  margin-right: 5px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 2px;
+  background-color: #aaa;
+  color: #fff;
+}
+
+.up,
+.stop,
+.down {
+  /* i의 글자크기가 커지면 float방식의 배경이미지가 수직중앙안됨 그래서 효율적이지 못함 */
+  /* float: right; flex 방식을 제외한 처음 생각한 float방식 
+  margin-top: 3px; float 배치하면 배경이미지 수직 중앙 맞추려고 마진탑 */
+  /* 포지션으로 배경이미지 배치 */
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  top: 50%;
+  right: 0;
+  margin-top: -6px; /* 배경 이미지 top 50%하면 시작이 기준이라 이미지 길이의 절반을 다시 올려줌 */
+  overflow: hidden;
+  background: url(./images/rank.png) no-repeat;
+}
+
+.stop {
+  background-position: 0 50%;
+}
+
+.down {
+  background-position: 0 100%;
+}
+
+.favorite-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
 /* 슬로건 */
 .slogan {
   height: 10vh;
