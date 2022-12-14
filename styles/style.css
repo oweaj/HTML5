@@ -818,6 +818,37 @@ body {
 }
 
 .footer-inner {
-  height: 15vh;
-  background-color: cornflowerblue;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 15px 100px 15px 180px;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+}
+
+.guide-list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  background-color: #aaa;
+  color: #fff;
+}
+
+.guide-list a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.address {
+  display: block;
+  margin-top: 10px;
+  line-height: 2;
 }
